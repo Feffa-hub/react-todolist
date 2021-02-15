@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import SubmitForm from "./SubmitForm";
+import "./SubmitForm.css"; 
+import "./TodoItems.css"; 
+
+
+
 
 function App() {
+
+function exit(){
+alert("lol it is just decorative"); 
+}
+
+
   return (
+    <div>
+    <header>
+    <div className ="bar">
+    <div className ="bar-decor">
+    <button className="bar-decor-open">_</button>
+    <button className="bar-decor-close" onClick={exit}>X</button>
+    </div>
+    </div>
+    </header>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <SubmitForm 
+    /> 
+    </div>
     </div>
   );
 }

@@ -1,0 +1,28 @@
+li {
+  list-style: none;
+  padding: 5px;
+  border: 2px inset;
+  margin-bottom: 10px;
+  background-color: rgb(230, 230, 230);
+  width: 80%;
+}
+
+.delete-cross {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  bottom: 45px;
+  padding: 6px 10px;
+  border: 2px solid rgb(212, 208, 200);
+  background-color: rgb(212, 208, 200);
+  color: black;
+  transition: 200ms ease-in-out;
+  border-style: outset;
+  font-weight: 600;
+}
+
+.delete-cross:hover {
+  outline: none;
+  background: transparent;
+  border-color: seashell;
+}
